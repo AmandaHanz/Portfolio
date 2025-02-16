@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda AB</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="pics/my.jpg"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <heaader class="header">
+      <a href="#home" class="logo">amanda<span>.dev</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">About Me</a>
+        <a href="#testimonials">Skills</a>
+        <a href="#websites">Projects</a>
+        <a href="#services">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </heaader>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Amanda Hansamali</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+
+          <p class="intro-text">
+            Welcome to my portfolio! I am currently an undergraduate majoring in <strong>Computer Science</strong>. As a passionate <em>technophile</em>, I am always curious about the latest technologies and new trends, which has led me to explore <strong>coding</strong>, <strong>Software Development</strong>,<strong>Machine Learning</strong>, <strong>Data Science</strong>, <strong>AI</strong>, and other exciting fields within Computer Science.
+          </p>
+
+          <p class="bio-text">
+            With a deep-rooted passion for both <strong>tech</strong> and <strong>entrepreneurship</strong>, my aim is to find practical solutions to real-world problems using my knowledge and skills.
+          </p>
+
+          <p class="writer-text">
+            As a dedicated <strong>technical writer</strong>, I am on a mission to bridge the gap between complicated tech information and newcomers in the Computer Science field. 
+          </p><br>
+
+          <p class="writer-text2">
+            I am looking forward to connect with like-minded collaborators and share knowledge. Let's explore the world of bits and bytes together . 💻
+            </p>
+          </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/amanda-hansamali" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/AmandaHanz" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://medium.com/@amandahansamali" target="_blank"><i class="bx bxl-medium"></i></a>
+            <a href="mailto:amandahansamali18@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" target="_blank" class="btn">Download CV</a>
+          <a href="mailto:amandahansamali18@gmail.com" class="btn">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="pics/my.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading"><span>About</span> Me</h2>
+
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Education</div>
+          <div class="timeline-content">
+            <p><b>📝 Primary/Secondary Education</b></p>
+            <p>
+              - Sri Lanka Singapore Friendship College<br/>
+            </p>
+            <br/>
+            <p><b>📝 Higher Education</b></p>
+            <p>
+              - University of Westminster -BSc.(Hons) Computer Science<br/>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Experience</div>
+            <div class="timeline-content">
+                <p> <b> 📍Technical Writer</b><br/> </p>
+                <p>Medium<br/> </p>
+                <p><b>📍 Ambassador</b><br/> </p>
+                <p>Freedom World<br/> </p>
+            </div>
+          </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Honours & Awards</div>
+          <div class="timeline-content">
+            <p><b> 🏆 G.C.E. O/L District 5th Place</b><br/> </p>
+            <p> <b>🏆 National Mathematics and Science Olympiad</b><br/> </p>
+            <p>Zonal gold medalist, Provincial Distinct pass<br/> </p>
+            <p><b>🏆  National Social Sciences</b><br/> </p>
+            <p>Zonal & Provincial gold medalist<br/> </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Volunteering</div>
+          <div class="timeline-content">
+            <p><b> 🌐 Webspire 2.0 (IEEE CS - IIT) : </b><br/> </p>
+            <p>Secretarial Team Member<br/> </p>
+            <p><b> 🌐 IEEE : </b> <br/> </p>
+            <p>Student Member<br/> </p>
+            <p><b> 🌐 IEEE | IEEE CS - IIT: </b><br/> </p>
+            <p>Member<br/> </p>
+          </div>
+        </div>
+
+       
+      </div>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-box">
+        <h2 class="heading">Skills</h2>
+    
+        <div class="websites-wrapper" id="skillsList"></div>
+      </div>
+    </section>
+    
+    <script>
+      // Array of skills with image paths
+      const skills = [
+        { name: "Angular", img: "pics/angular.png" },
+        { name: "Azure", img: "pics/azure.png" },
+        { name: "C", img: "pics/c.png" },
+        { name: "CSS", img: "pics/css.png" },
+        { name: "Git", img: "pics/git.png" },
+        { name: "Github", img: "pics/github.png" },
+        { name: "HTML", img: "pics/html.png" },
+        { name: "Java", img: "pics/java.png" },
+        { name: "Javafx", img: "pics/javafx.png" },
+        { name: "JavaScript", img: "pics/js.png" },
+        { name: "MySQL", img: "pics/mysql.png" },
+        { name: "NumPy", img: "pics/numpy.png" },
+        { name: "OpenAI", img: "pics/openai.png" },
+        { name: "Pandas", img: "pics/pandas.png" },
+        { name: "Python", img: "pics/python.png" },
+        { name: "React", img: "pics/react.png" },
+        { name: "React-native", img: "pics/reactnative.png" },
+        { name: "Rxjs", img: "pics/rxjs.png" },
+        { name: "Sci-kit Learn", img: "pics/scikit.png" },
+        { name: "Springboot", img: "pics/springboot.png" },
+        { name: "Tailwind CSS", img: "pics/tailwind.png" },
+        { name: "TypeScript", img: "pics/typescript.png" },
+        { name: "Android Studio", img: "pics/android.png" },
+        { name: "Canva", img: "pics/canva.png" },
+        { name: "Figma", img: "pics/figma.png" },
+        { name: "Intellij IDEA", img: "pics/ij.png" },
+        { name: "Jupyter Notebook", img: "pics/jupyter.png" },
+        { name: "Postman", img: "pics/postman.png" },
+        { name: "PyCharm", img: "pics/pycharm.png" },
+        { name: "Visual Studio Code", img: "pics/vsc.png" },
+        { name: "Swagger API", img: "pics/swagger.png" },
+       
+      ];
+    
+      // Generate and insert skill items using map()
+      document.getElementById("skillsList").innerHTML = skills
+        .map(skill => `
+          <div class="website-item">
+            <img src="${skill.img}" alt="${skill.name}" />
+            <h2>${skill.name}</h2>
+          </div>
+        `)
+        .join("");
+    </script>
+
+
+<section class="websites" id="websites">
+    <div class="websites-box">
+      <h2 class="heading"><span>My</span> Projects</h2>
+      <div class="websites-wrapper" id="websitesList"></div>
+    </div>
+  </section>
+  
+  <script>
+    // Array of website details
+    const websites = [
+      { name: "LEXi: Education is for Everyone", img: "pics/lexii.jpg", url: "https://lexi.lk/" },
+      { name: "Mood Based Music Recommendation System", img: "pics/mood.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
+      { name: "Real-Time Ticket Management System", img: "pics/ticket.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
+      { name: "Flights Ticket Management System", img: "pics/flight.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
+      { name: "Ocean Wave:Virtual Exploration of Life Below Water", img: "pics/ocean.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
+      { name: "University Grade Analyzer", img: "pics/barchart.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
+    ];
+  
+    // Generate and insert website items dynamically
+    document.getElementById("websitesList").innerHTML = websites
+      .map(website => `
+        <div class="website-item">
+          <a href="${website.url}" target="_blank">
+            <img src="${website.img}" alt="${website.name}" />
+            <h2>${website.name}</h2>
+          </a>
+        </div>
+      `)
+      .join("");
+  </script>    
+
+<section class="services" id="services">
+  <h2 class="heading">Certifications</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-wrapper" id="certificationsList"></div>
+    <div class="carousel-controls">
+      <button id="prev" class="carousel-btn">←</button>
+      <button id="next" class="carousel-btn">→</button>
+    </div>
+  </div>
+</section>
+
+<div class="see-more-btn">
+  <a href="https://www.linkedin.com/in/amanda-hansamali/details/certifications/" target="_blank" class="see-more">See More</a>
+</div>
+
+<script>
+
+const certifications = [
+  { name: "CS50x", img: "pics/cs50.png" },
+  { name: "Microsoft Azure AI Fundamentals",  img: "pics/microsoft.png" },
+  { name: "Introduction to Large Language Models",  img: "pics/google.png" },
+  { name: "Angular Essential Training", img: "pics/linkedin.png" },
+  { name: "Introduction to Gen AI", img: "pics/google.png" },
+  { name: "Introduction to Jupyter",  img: "pics/365.png" },
+  { name: "Python Essentials",  img: "pics/cisco.png" },
+  { name: "Java OOP",  img: "pics/linkedin.png" },
+  { name: "Azure AI: Computer Vision", img: "pics/microsoft.png" },
+  { name: "Java: Data Structures", img: "pics/linkedin.png" },
+  { name: "SpringBoot Essential Training",  img: "pics/linkedin.png" },
+  { name: "Azure AI: Fundemental AI / AI Overview",  img: "pics/microsoft.png" },
+  { name: "NumPy Essetial Training",  img: "pics/linkedin.png" },
+  { name: "Learn Java 17",  img: "pics/linkedin.png" },
+  { name: "International Writing Competition | India - B.R.Ambedkar",  img: "pics/india.png" },
+
+];
+
+
+// Generate and insert certification items dynamically
+document.getElementById("certificationsList").innerHTML = certifications
+  .map(cert => `
+    <div class="carousel-item">
+      <img src="${cert.img}" alt="${cert.name}" />
+      <h1>${cert.name}</h1>
+    </div>
+  `)
+  .join("");
+</script>
+
+
+
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="mailto:amandahansamali18@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+        <a href="https://www.linkedin.com/in/amanda-hansamali" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/AmandaHanz" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://medium.com/@amandahansamali" target="_blank"><i class="bx bxl-medium"></i></a> 
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Skills</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+    
+      </ul>
+      <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Amanda Hansamali | All Right Reserved</p>
+    <script src="script.js"></script>
+  </body>
+</html>
