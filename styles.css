@@ -516,17 +516,7 @@ h3 {
   gap: 30px;
 }
 
-@media (min-width: 768px) {
-  .websites-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (min-width: 1024px) {
-  .websites-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 /* Website Item */
 .website-item {
@@ -559,6 +549,30 @@ h3 {
   transform: scale(1.05);
 }
 
+@media (min-width: 768px) {
+  .websites-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto; 
+}
+
+}
+
+@media (min-width: 1024px) {
+  .websites-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto; 
+}
+
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -578,7 +592,7 @@ h3 {
 }
 
 .view-btn {
-  background-color: var(--main-color);
+  background-color: var(--second-bg-color);
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
