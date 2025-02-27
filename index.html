@@ -162,7 +162,6 @@
         { name: "Shadcn", img: "pics/shadcn.png" },
         { name: "Springboot", img: "pics/springboot.png" },
         { name: "Tailwind CSS", img: "pics/tailwind.png" },
-        { name: "Tensorflow", img: "pics/tensorflow.png" },
         { name: "Three.js", img: "pics/three.png" },
         { name: "Android Studio", img: "pics/android.png" },
         { name: "Canva", img: "pics/canva.png" },
@@ -180,7 +179,7 @@
       // Generate and insert skill items using map()
       document.getElementById("skillsList").innerHTML = skills
         .map(skill => `
-          <div class="website-item">
+          <div class="skills-item">
             <img src="${skill.img}" alt="${skill.name}" />
             <h2>${skill.name}</h2>
           </div>
@@ -190,37 +189,48 @@
 
 
 <section class="websites" id="websites">
-    <div class="websites-box">
-      <h2 class="heading"><span>My</span> Projects</h2>
-      <div class="websites-wrapper" id="websitesList"></div>
+  <div class="websites-box">
+    <h2 class="heading"><span>My</span> Projects</h2>
+    <div class="websites-wrapper" id="websitesList">
+      <!-- Projects will be dynamically inserted here -->
     </div>
-  </section>
-  
-  <script>
-    // Array of website details
-    const websites = [
-      { name: "LEXi: Education is for Everyone", img: "pics/lexii.jpg", url: "https://lexi.lk/" },
-      { name: "Mood Based Music Recommendation System", img: "pics/mood.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
-      { name: "Voxie:Your Voice Partner in Speech", img: "pics/tts.jpg", url: "https://voxie-nine.vercel.app/" },
-      { name: "Cosmo360: Explore the Universe in 3D", img: "pics/universe.png", url: "https://cosmo360.vercel.app/" },
-      { name: "Real-Time Ticket Management System", img: "pics/ticket.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
-      { name: "Flights Ticket Management System", img: "pics/flight.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
-      { name: "Ocean Wave:Virtual Exploration of Life Below Water", img: "pics/ocean.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
-      { name: "University Grade Analyzer", img: "pics/barchart.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/" },
-    ];
-  
-    // Generate and insert website items dynamically
-    document.getElementById("websitesList").innerHTML = websites
-      .map(website => `
-        <div class="website-item">
-          <a href="${website.url}" target="_blank">
+  </div>
+</section>
+
+<script>
+  // Array of website details with technologies
+  const websites = [
+    { name: "LEXi: Education is for Everyone", img: "pics/lexii.jpg", url: "https://lexi.lk/", technologies: ["React", "Node.js", "MongoDB"] },
+    { name: "Mood Based Music Recommendation System", img: "pics/mood.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/", technologies: ["Python", "Machine Learning"] },
+    { name: "Voxie: Your Voice Partner in Speech", img: "pics/tts.jpg", url: "https://voxie-nine.vercel.app/", technologies: ["React", "Node.js", "AWS"] },
+    { name: "Cosmo360: Explore the Universe in 3D", img: "pics/universe.png", url: "https://cosmo360.vercel.app/", technologies: ["Three.js", "React"] },
+    { name: "Real-Time Ticket Management System", img: "pics/ticket.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/", technologies: ["Java", "Spring Boot", "MySQL"] },
+    { name: "Flights Ticket Management System", img: "pics/flight.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/", technologies: ["Java", "Spring Boot"] },
+    { name: "Ocean Wave: Virtual Exploration of Life Below Water", img: "pics/ocean.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/", technologies: ["React", "Node.js"] },
+    { name: "University Grade Analyzer", img: "pics/barchart.png", url: "https://www.linkedin.com/in/amanda-hansamali/details/projects/", technologies: ["Python", "Data Science"] },
+  ];
+
+  // Generate and insert website items dynamically
+  document.getElementById("websitesList").innerHTML = websites
+    .map(website => `
+      <div class="website-item">
+        <a href="${website.url}" target="_blank">
+          <div class="image-container">
             <img src="${website.img}" alt="${website.name}" />
-            <h2>${website.name}</h2>
-          </a>
+            <div class="overlay">
+              <button class="view-btn">View Project</button>
+            </div>
+          </div>
+          <h3 class="website-name">${website.name}</h3>
+        </a>
+        <div class="technologies">
+          ${website.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>
-      `)
-      .join("");
-  </script>    
+      </div>
+    `)
+    .join("");
+</script>
+   
 
 <section class="services" id="services">
   <h2 class="heading">Certifications</h2>
