@@ -611,7 +611,8 @@ h3 {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
   }
-  
+
+ 
   
   
   .testimonials {
@@ -771,6 +772,10 @@ h3 {
       padding-bottom: 7rem;
       grid-template-columns: repeat(2, 1fr);
       margin: 0 5rem;
+
+      .carousel-container img {
+        width: 10rem;
+      }
     }
   }
   @media (max-width: 991px) {
