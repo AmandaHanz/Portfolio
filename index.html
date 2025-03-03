@@ -57,7 +57,7 @@
         </div>
 
         <div class="btn-group">
-          <a href="#" target="_blank" class="btn">Download CV</a>
+          <a href="https://drive.google.com/file/d/1HBpfCr_FCTVU60VurdfABSmjbE3YCHZI/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
           <a href="mailto:amandahansamali18@gmail.com" class="btn">Contact Me</a>
         </div>
       </div>
@@ -311,6 +311,24 @@ document.getElementById("certificationsList").innerHTML = certifications
         </div>
       </form>
     </section>
+
+    <!-- Chatbot Button -->
+  <button id="chatbotBtn" class="chatbot-btn">
+    Chat
+  </button>
+
+  <!-- Chatbot Container -->
+  <div id="chatbotContainer" class="chatbot-container">
+    <div class="chat-header">
+      <span>Amanda's Assistant</span>
+      <button id="closeBtn" class="close-btn">X</button>
+    </div>
+    <div id="messages" class="messages"></div>
+    <div class="chat-footer">
+      <input type="text" id="userInput" placeholder="Type a message..." />
+      <button id="sendBtn" disabled>Send</button>
+    </div>
+  </div>
 
     <footer class="footer">
       <div class="social">

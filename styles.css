@@ -726,6 +726,102 @@ h3 {
     box-shadow: 0 0 25px var(--main-color);
   }
 
+
+  .chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background-color: var(--second-bg-color);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+  }
+  
+  .chat-footer input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .chat-footer button {
+    padding: 8px 12px;
+    background-color: #3c9896;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .chat-footer button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    color: rgb(20, 18, 18);
+  }
+  
+  .message.user {
+    background-color: #bfc0c1;
+    text-align: right;
+  }
+  
+  .message.bot {
+    background-color: #8ab3c9;
+    text-align: left;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
  
   
   
